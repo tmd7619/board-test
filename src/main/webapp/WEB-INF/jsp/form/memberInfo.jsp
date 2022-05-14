@@ -5,8 +5,8 @@
 </head>
 <body>
     <h1>회원정보</h1>
-    id : ${member.id}<br>
-    password :${member.password}<br>
-    name : ${member.name}<br>
+    id : ${memberVO.id}<br>
+    password :${memberVO.password}<br>
+    name : ${memberVO.name}<br>
 </body>
 </html>
