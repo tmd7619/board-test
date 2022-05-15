@@ -10,7 +10,9 @@
     name : ${memberVO.name}<br>
 </body>
 <script>
-    alert("${msg}");
+    if("${msg}" != null){
+        alert("${msg}");
+    };
 
 </script>
 </html>

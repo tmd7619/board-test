@@ -17,5 +17,12 @@
   </a>
   </br/>
 
+  <a href="<%=request.getContextPath()%>/ajax/resBody.do">
+    문자열 응답
+  </a></br>
+
+  <a href="<%=request.getContextPath()%>/ajax/resBody.json">
+    JSON 응답
+  </a>
   </body>
 </html>

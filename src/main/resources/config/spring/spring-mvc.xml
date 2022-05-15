@@ -13,9 +13,8 @@
     http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <context:component-scan base-package="kr.ac.kopo"/>
-    <mvc:annotation-driven />
     <mvc:default-servlet-handler />
-
+    <mvc:annotation-driven/>
 
 
 <!--    &lt;!&ndash; db.properties 연동 시 필요한 설정  &ndash;&gt;-->

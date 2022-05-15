@@ -13,8 +13,21 @@
     http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <context:component-scan base-package="kr.ac.kopo"/>
-    <mvc:annotation-driven />
-    <mvc:default-servlet-handler />
+    <mvc:annotation-driven/>
+<!--    <mvc:default-servlet-handler />-->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>text/html; charset=utf-8</value>
+                        <value>application/json; charset=utf-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+
+    </mvc:annotation-driven>
 
 
 
