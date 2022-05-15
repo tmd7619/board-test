@@ -9,4 +9,8 @@
     password :${memberVO.password}<br>
     name : ${memberVO.name}<br>
 </body>
+<script>
+    alert("${msg}");
+
+</script>
 </html>
